@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hrO-Cj-9Uk">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5TM-Aj-iI2">
+            <objects>
+                <viewController id="hrO-Cj-9Uk" customClass="ViewController" customModule="RecognitionAI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qdl-Va-xFm"/>
+                        <viewControllerLayoutGuide type="bottom" id="gD8-9u-5Rz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ll1-xi-idN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="92K-d8-nUA">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UjD-Df-ThM">
+                                <subviews>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWd-7q-Jfo">
+                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="XWd-7q-Jfo" firstAttribute="top" secondItem="UjD-Df-ThM" secondAttribute="top" constant="16" id="NFi-8i-aLC"/>
+                                    <constraint firstAttribute="trailing" secondItem="XWd-7q-Jfo" secondAttribute="trailing" constant="16" id="OUy-UY-DZX"/>
+                                    <constraint firstAttribute="bottom" secondItem="XWd-7q-Jfo" secondAttribute="bottom" constant="16" id="RXh-mL-vdg"/>
+                                    <constraint firstItem="XWd-7q-Jfo" firstAttribute="leading" secondItem="UjD-Df-ThM" secondAttribute="leading" constant="16" id="uf5-f6-GaL"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="92K-d8-nUA" secondAttribute="trailing" id="6r4-gA-e7W"/>
+                            <constraint firstItem="gD8-9u-5Rz" firstAttribute="top" secondItem="UjD-Df-ThM" secondAttribute="bottom" constant="4" id="JPJ-Eo-pPp"/>
+                            <constraint firstAttribute="trailing" secondItem="UjD-Df-ThM" secondAttribute="trailing" constant="4" id="Ofw-yM-6ea"/>
+                            <constraint firstAttribute="bottom" secondItem="92K-d8-nUA" secondAttribute="bottom" id="Sk2-lp-Wk9"/>
+                            <constraint firstItem="92K-d8-nUA" firstAttribute="leading" secondItem="Ll1-xi-idN" secondAttribute="leading" id="r4c-jO-X5p"/>
+                            <constraint firstItem="92K-d8-nUA" firstAttribute="top" secondItem="qdl-Va-xFm" secondAttribute="bottom" id="tbu-Gt-ZH9"/>
+                            <constraint firstItem="UjD-Df-ThM" firstAttribute="leading" secondItem="Ll1-xi-idN" secondAttribute="leading" constant="4" id="whr-Hz-4Mm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="predictLabel" destination="XWd-7q-Jfo" id="xXR-AD-VND"/>
+                        <outlet property="previewView" destination="92K-d8-nUA" id="dW5-ps-h0x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZH-v9-Yrc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="-57.121439280359823"/>
+        </scene>
+    </scenes>
+</document>
